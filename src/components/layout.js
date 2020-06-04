@@ -1,5 +1,6 @@
 import React from 'react';
 import { Global, css } from '@emotion/core';
+import Header from './header';
 
 const Layout = ({ children }) => (
   <>
@@ -18,6 +19,9 @@ const Layout = ({ children }) => (
         body {
           margin: 0;
           color: #555;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+            Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+            'Segoe UI Symbol';
           font-size: 18px;
           line-height: 1.4;
 
@@ -49,7 +53,7 @@ const Layout = ({ children }) => (
         }
       `}
     />
-    <header />
+    <Header />
     <main
       css={css`
         margin: 2rem auto 4rem;
