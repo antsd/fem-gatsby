@@ -40,7 +40,7 @@ const TextBox = styled('div')`
 const Hero = () => {
   const { image } = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "thomas-bennie-mn.jpg" }) {
+      image: file(relativePath: { eq: "thomas-benni-mn.jpg" }) {
         sharp: childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
